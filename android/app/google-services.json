@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "855445397758",
+    "project_id": "pet-compositive",
+    "storage_bucket": "pet-compositive.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:855445397758:android:2e96be19b8d55dac34c5af",
+        "android_client_info": {
+          "package_name": "com.example.flutter_practice_project"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD849WuPMI_GiJ4rwGg-TCwBk2zK8swoNI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

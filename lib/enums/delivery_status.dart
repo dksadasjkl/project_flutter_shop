@@ -7,11 +7,10 @@ enum DeliveryStatus {
   //! 생성자
   const DeliveryStatus(this.status, this.statusName);
 
-  //! 변수 선언
   final String status;
   final String statusName;
 
-  //! 상태 이름 반환
+  //! 상태 이름 변환
   factory DeliveryStatus.getStatusName(String status) {
     return DeliveryStatus.values.firstWhere((value) => value.status == status,
         orElse: () => DeliveryStatus.waiting);

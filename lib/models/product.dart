@@ -3,6 +3,7 @@ class Product {
   String? productName;
   String? productDetails;
   String? productImageUrl;
+  String? productImageDatailsUrl;
   double? price;
 
   Product({
@@ -10,6 +11,7 @@ class Product {
     this.productName,
     this.productDetails,
     this.productImageUrl,
+    this.productImageDatailsUrl,
     this.price,
   });
 
@@ -18,6 +20,7 @@ Product.fromJson(Map<String, Object?> json)
       productNo: json['productNo'] as int,
       productName: json['productName'] as String,
       productImageUrl: json['productImageUrl'] as String,
+      productImageDatailsUrl: json['productImageDatailsUrl'] as String? ?? '',
       price: (json['price'] as int).toDouble(),
   );
 
@@ -28,6 +31,7 @@ Product.fromJson(Map<String, Object?> json)
     data['productName'] = productName;
     data['productDetails'] = productDetails;
     data['productImageUrl'] = productImageUrl;
+    data['productImageDatailsUrl'] = productImageDatailsUrl;
     data['price'] = price;
     return data;
   }

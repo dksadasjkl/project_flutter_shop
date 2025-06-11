@@ -66,6 +66,7 @@ class _ItemListPageState extends State<ItemListPage> {
                     productNo: document.data().productNo ?? 0,
                     productName: document.data().productName ?? "",
                     productImageUrl: document.data().productImageUrl ?? "",
+                    productImageDatailsUrl : document.data().productImageDatailsUrl ?? "",
                     price: document.data().price ?? 0,
                   );
                 }).toList(),
@@ -91,6 +92,7 @@ class _ItemListPageState extends State<ItemListPage> {
       {required int productNo,
       required String productName,
       required String productImageUrl,
+      required String productImageDatailsUrl,
       required double price}) {
     return GestureDetector(
       onTap: () {
@@ -100,6 +102,7 @@ class _ItemListPageState extends State<ItemListPage> {
                 productNo: productNo,
                 productName: productName,
                 productImageUrl: productImageUrl,
+                productImageDatailsUrl : productImageDatailsUrl,
                 price: price);
           },
         ));

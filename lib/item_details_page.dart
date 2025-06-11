@@ -9,12 +9,15 @@ class ItemDetailsPage extends StatefulWidget {
   int productNo;
   String productName;
   String productImageUrl;
+  String productImageDatailsUrl;
   double price;
+  
   ItemDetailsPage(
       {super.key,
       required this.productNo,
       required this.productName,
       required this.productImageUrl,
+      required this.productImageDatailsUrl,
       required this.price});
 
   @override
@@ -35,6 +38,7 @@ class _ItemDetailsPageState extends State<ItemDetailsPage> {
         child: Column(
           children: [
             productImageContainer(),
+            productImage2Container(),
             productNameContainer(),
             productPriceContainer(),
             productQuantityContainer(),
@@ -81,6 +85,30 @@ class _ItemDetailsPageState extends State<ItemDetailsPage> {
       child:  CachedNetworkImage(
         width: MediaQuery.of(context).size.width * 0.8, // 80퍼
         imageUrl: widget.productImageUrl, // 가져온 데이터
+        fit: BoxFit.cover,
+        placeholder: (context, url) {
+          return const Center(
+            child: CircularProgressIndicator(
+              strokeWidth: 2,
+            ),
+          );
+        },
+        errorWidget: (context, url, error) {
+          return const Center(
+            child: Text("오류 발생"),
+          );
+        },
+      ),
+    );
+  }
+
+  Widget productImage2Container () {
+    return Container(
+      alignment: Alignment.center,
+      padding: const EdgeInsets.all(15),
+      child:  CachedNetworkImage(
+        width: MediaQuery.of(context).size.width * 0.8, // 80퍼
+        imageUrl: widget.productImageDatailsUrl, // 가져온 데이터
         fit: BoxFit.cover,
         placeholder: (context, url) {
           return const Center(

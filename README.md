@@ -2,21 +2,11 @@
 
 > ## [✨ 프로젝트 소개](#-프로젝트-소개-notion)
 >
-> ## [💼 작업](#-작업-1)
->
-> ## [📚 프로젝트 진행 상황 관리](#-프로젝트-진행-상황-관리-1)
->
 > ## [✔ 컨벤션](#-컨벤션-1)
->
-> ## [🔍 배포](#-배포-1)
 > 
 > ## [🛠 개발 도구](#-개발-도구-1)
 >
 > ## [📆 프로젝트 일정](#-프로젝트-일정-1)
->
-> ## [📄 API 명세서&ERD 설계도](#-api-명세서erd-설계도-1)
->
-> ## [📋 메뉴 구조도](#-메뉴-구조도-1)
 >
 > ## [🖥 화면 구현](#-화면-구현-1)
 >
@@ -168,16 +158,6 @@
 <br/>
 <br/>
 
-## 🔍 배포
-
-![무중단 배포](https://github.com/compositivePetProject/compositive_pet_project_front/assets/118997608/9412eee1-ae75-43f1-b84c-1b6d44948e5b)
-<p>
-확장성 및 유지보수성을 고려하여 배포에 대한 고민을 해보았습니다. 대부분의 팀 프로젝트의 경우 팀원들끼리 로컬 환경에서 개발 후 배포를 하고 프로젝트가 종료되는게 일반적입니다. 하지만, 배포 후 예상치 못한 버그 수정이나 기능 추가 등의 상황까지 고려한다면 배포된 상태에서 해당 서버를 중지시키고 작업을 하여 재배포하게 됩니다. 그 때 접속되어 있는 사용자의 경우는 해당 서비스를 이용하지 못하는 불편함을 겪게 됩니다. 즉, 중단된 상태를 나타내고 저희 조에서는 무중단 배포의 개념을 적용시켜 보았습니다. 서버를 Blue(8080 Port), Green(9090 Port) 각각의 백엔드 서버를 구동하면서 첫 배포시 사용자에게 Blue 서버를 구동하여 배포합니다. 이후 서비스의 추가적인 개발 작업이 필요할 경우 남아있는 Green 서버가 존재하기 때문에 여러 테스트 과정을 진행하고 Push를 하게되면 Github Action 에 의해 자동 CI/CD 작업을 Dokcer 파일에 입력된 되로 업데이트 되며, NGINX 에서 기존 사용자들에게 제공중인 Blue 서버에서 GREEN 서버로 이동하게 만들어 줍니다. 이렇게 되면 Blue -> Green 서버의 전환이 계속해서 반복되게 되는 구조로 사용자의 입장에서 서비스를 이용하는데 문제가 발생하지 않게 됩니다.
-</p>
-<p align="right" dir="auto">
-<a href="https://github.com/dksadasjkl/project_kiosk_front">TOP 🔼</a>
-<br/>
-<br/>
 
 ## 🛠 개발 도구
 
@@ -239,125 +219,31 @@
 
 ## 🖥 화면 구현
 
-### 🔐 관리자 계정 화면
-
 <div align="center" dir="auto">
- <img src="https://github.com/user-attachments/assets/5b340b20-35dd-4537-90f2-f479f1540574" align="center" width="100%"/> 
-    <b>로그인 화면</b>
+ <img src="https://github.com/user-attachments/assets/a9e4a6b9-4de6-4222-b1ec-7da08ab72239" align="center" width="100%"/> 
+    <b>전체 제품 화면</b>
 </div>
 <br/>
 <div align="center" dir="auto">
-    <img src="https://github.com/user-attachments/assets/d13c8c91-379f-42f8-bfc2-8d05385bc4ff" align="center" width="100%"/>
-    <b>로그아웃 화면</b>
+    <img src="https://github.com/user-attachments/assets/07f0e4fb-63bf-4a14-b4a2-32d3df3b3772" align="center" width="100%"/>
+    <b>제품 상세페이지 화면</b>
 </div>
 <br/>
 <div align="center" dir="auto">
-    <img src="https://github.com/user-attachments/assets/604d7d70-0fa9-4b35-b9f9-e5a0cb267980" align="center" width="100%"/>
-    <b>회원가입 화면</b>
+    <img src="https://github.com/user-attachments/assets/866e0782-d978-4c1b-9352-03f5659fd6a4" align="center" width="100%"/>
+    <b>장바구니 화면</b>
 </div>
 <br/>
 <div align="center" dir="auto">
-    <img src="https://github.com/user-attachments/assets/a5e37252-1003-4be5-82d3-db3dc87ce6c0" align="center" width="100%"/>
-    <b>OAuth2 카카오 로그인 화면</b>
-</div>
-<br/>
-<div align="center" dir="auto">
-    <img src="https://github.com/user-attachments/assets/69a1cd82-f532-4ed3-a5f7-4555845dfa03" align="center" width="100%"/>
-    <b>OAuth2 카카오 계정통합 화면</b>
-</div>
-
-### 🍔 주문 화면
-
-<div align="center" dir="auto">
-    <img src="https://github.com/user-attachments/assets/ab7d66bd-e0af-4212-a3a5-7d6cbc2e102a" width="100%"/>
+    <img src="https://github.com/user-attachments/assets/1657571b-faa6-4dd2-aee3-4fbeaf1764f4" align="center" width="100%"/>
     <b>주문 화면</b>
 </div>
 <br/>
 <div align="center" dir="auto">
-    <img src="https://github.com/user-attachments/assets/efaeb6c9-231d-4abc-8761-b191c7ab2e66" width="100%"/>
-    <b>큰글씨 모드 주문 화면</b>
-</div>
-<br/>
-<div align="center" dir="auto">
-    <img src="https://github.com/user-attachments/assets/0cbb5356-8d3d-424f-ad85-9e932e0f4300" width="100%"/>
-    <b>포인트 적립 결제화면</b>
-</div>
-<br/>
-<div align="center" dir="auto">
-    <img src="https://github.com/user-attachments/assets/f9ba3024-2cb7-4de4-8813-349768b348dd" width="100%"/>
-    <b>포인트 사용 결제화면</b>
+    <img src="https://github.com/user-attachments/assets/e18ec485-6954-43e1-b881-f8fabdaac5c6" align="center" width="100%"/>
+    <b>마이페이지 화면</b>
 </div>
 
-<div align="center" dir="auto">
-    <img src="https://github.com/user-attachments/assets/e11ca642-4333-457d-a2d3-596b641ccffb" width="50%" />
-    <br/>
-    <b>카카오페이 모바일 결제 화면</b>
-</div>
-
-### 📨 피드백 화면
-
-<div align="center" dir="auto">
-    <img src="https://github.com/user-attachments/assets/16028426-b862-4043-9592-0147ac607e65" width="100%"/>
-    <b>피드백 작성 화면</b>
-</div>
-
-### 🏖 관광지 추천 화면
-
-<div align="center" dir="auto">
-    <img src="https://github.com/user-attachments/assets/06220529-47d1-476b-a8e7-429eccdf7221" width="100%"/>
-    <b>관광지 추천 리스트 및 지도 화면</b>
-</div>
-
-### 🛠 관리자 화면
-
-<div align="center" dir="auto">
-    <img src="https://github.com/user-attachments/assets/c82e3206-b273-49c0-af9e-49964fb14ef4" width="100%"/>
-    <b>관리자 모드 진입 및 메인 화면</b>
-</div>
-</br>
-<div align="center" dir="auto">
-    <img src="https://github.com/user-attachments/assets/e8906343-a123-4f42-9fc3-95ea3bdb1db2" width="100%"/>
-    <b>점포 매출 조회 화면</b>
-</div>
-</br>
-<div align="center" dir="auto">
-    <img src="https://github.com/user-attachments/assets/e55b915c-6c42-4cd3-a50f-ae40a8a480c3" width="100%"/>
-    <b>결제내역 조회 및 결제 취소화면</b>
-</div>
-</br>
-<div align="center" dir="auto">
-    <img src="https://github.com/user-attachments/assets/9b48b0fc-2ee2-4c3a-b0dc-f1575ca0fc9e" width="100%"/>
-    <b>메뉴 추가 화면</b>
-</div>
-</br>
-<div align="center" dir="auto">
-    <img src="https://github.com/user-attachments/assets/feca769b-9890-49bc-9500-45bd2ad1cf25" width="100%"/>
-    <b>메뉴 수정 화면</b>
-</div>
-</br>
-<div align="center" dir="auto">
-    <img src="https://github.com/user-attachments/assets/1860fb24-e5fe-40d2-be6a-ecff1889ab03" width="100%"/>
-    <b>피드백 조회 화면</b>
-</div>
-</br>
-<div align="center" dir="auto">
-    <img src="https://github.com/user-attachments/assets/8ee4cb58-6a2b-4928-b7b3-4d79195ddae1" width="100%"/>
-    <b>회원조회 및 관리 화면</b>
-</div>
-</br>
-<div align="center" dir="auto">
-    <img src="https://github.com/user-attachments/assets/3c717ff7-2825-49dc-92dc-441fa7f34284" width="100%"/>
-    <b>점포 설정 및 점포 이름 변경 화면</b>
-</div>
-</br>
-<div align="center" dir="auto">
-    <img src="https://github.com/user-attachments/assets/01ce13af-47a7-4035-b3d5-d90cb47d31a3" width="100%"/>
-    <b>점포 로고 변경 화면</b>
-</div>
-
-<p align="right" dir="auto">
-<a href="https://github.com/dksadasjkl/project_kiosk_front">TOP 🔼</a>
-</p>
 
 </br>
 </br>

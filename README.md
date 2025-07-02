@@ -220,28 +220,28 @@
 ## 🖥 화면 구현
 
 <div align="center" dir="auto">
- <img src="https://github.com/user-attachments/assets/a9e4a6b9-4de6-4222-b1ec-7da08ab72239" align="center" width="100%"/> 
-    <b>전체 제품 화면</b>
+  <img src="https://github.com/user-attachments/assets/a9e4a6b9-4de6-4222-b1ec-7da08ab72239" width="300px"/>  
+  <br/><b>전체 제품 화면</b>
 </div>
 <br/>
 <div align="center" dir="auto">
-    <img src="https://github.com/user-attachments/assets/07f0e4fb-63bf-4a14-b4a2-32d3df3b3772" align="center" width="100%"/>
-    <b>제품 상세페이지 화면</b>
+  <img src="https://github.com/user-attachments/assets/07f0e4fb-63bf-4a14-b4a2-32d3df3b3772" width="300px"/>
+  <br/><b>제품 상세페이지 화면</b>
 </div>
 <br/>
 <div align="center" dir="auto">
-    <img src="https://github.com/user-attachments/assets/866e0782-d978-4c1b-9352-03f5659fd6a4" align="center" width="100%"/>
-    <b>장바구니 화면</b>
+  <img src="https://github.com/user-attachments/assets/866e0782-d978-4c1b-9352-03f5659fd6a4" width="300px"/>
+  <br/><b>장바구니 화면</b>
 </div>
 <br/>
 <div align="center" dir="auto">
-    <img src="https://github.com/user-attachments/assets/1657571b-faa6-4dd2-aee3-4fbeaf1764f4" align="center" width="100%"/>
-    <b>주문 화면</b>
+  <img src="https://github.com/user-attachments/assets/1657571b-faa6-4dd2-aee3-4fbeaf1764f4" width="300px"/>
+  <br/><b>주문 화면</b>
 </div>
 <br/>
 <div align="center" dir="auto">
-    <img src="https://github.com/user-attachments/assets/e18ec485-6954-43e1-b881-f8fabdaac5c6" align="center" width="100%"/>
-    <b>마이페이지 화면</b>
+  <img src="https://github.com/user-attachments/assets/e18ec485-6954-43e1-b881-f8fabdaac5c6" width="300px"/>
+  <br/><b>마이페이지 화면</b>
 </div>
 
 

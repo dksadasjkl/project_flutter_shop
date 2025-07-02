@@ -38,9 +38,9 @@ class _ItemDetailsPageState extends State<ItemDetailsPage> {
         child: Column(
           children: [
             productImageContainer(),
-            productImageDetailContainer(),
             productNameContainer(),
             productPriceContainer(),
+            productImageDetailContainer(),
             productQuantityContainer(),
             productTotalPriceContainer(),   
           ],
@@ -128,7 +128,8 @@ class _ItemDetailsPageState extends State<ItemDetailsPage> {
 
   Widget productNameContainer () {
     return Container(
-        padding: const EdgeInsets.symmetric(horizontal: 20), //가로 패딩
+        alignment: Alignment.centerLeft,
+        padding: const EdgeInsets.only(top: 5, left: 45, bottom: 5), // 왼쪽만 패딩
         child: Text(
           widget.productName,
           textScaleFactor: 1.5,
@@ -141,7 +142,8 @@ class _ItemDetailsPageState extends State<ItemDetailsPage> {
 
   Widget productPriceContainer () {
     return Container(
-        padding: const EdgeInsets.symmetric(vertical: 20), 
+        alignment: Alignment.centerRight,
+        padding: const EdgeInsets.symmetric(horizontal: 50), 
         child: Text(
           "${numberFormat.format(widget.price)}원",
           textScaleFactor: 1.3,
@@ -154,7 +156,6 @@ class _ItemDetailsPageState extends State<ItemDetailsPage> {
 
    Widget productQuantityContainer() {
     return Container(
-      padding: const EdgeInsets.symmetric(vertical: 10),
       child: Row(
         mainAxisSize: MainAxisSize.min,
         children: [

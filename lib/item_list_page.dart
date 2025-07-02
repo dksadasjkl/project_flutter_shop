@@ -112,7 +112,7 @@ class _ItemListPageState extends State<ItemListPage> {
         child: Column(
           children: [
             CachedNetworkImage(
-              height: 150,
+              height: 160,
               fit: BoxFit.cover,
               imageUrl: productImageUrl,
               placeholder: (context, url) {
@@ -138,7 +138,7 @@ class _ItemListPageState extends State<ItemListPage> {
               ),
             ),
             Container(
-              padding: const EdgeInsets.all(8),
+              padding: const EdgeInsets.only(top: 3, right: 8, left: 8),
               child: Text("${numberFormat.format(price)}원"),
             ),
           ],

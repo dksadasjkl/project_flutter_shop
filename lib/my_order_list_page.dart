@@ -60,6 +60,7 @@ class _MyOrderListPageState extends State<MyOrderListPage> {
                       //! 제품 상세 정보를 가져온 후, orderContainer에 데이터를 전달합니다.
                       Product product = productSnapshot.data!.docs.first.data();
                       return orderContainer(
+                        document: document,
                         productNo: document.data().productNo ?? 0,
                         productName: product.productName ?? "",
                         productImageUrl: product.productImageUrl ?? "",
@@ -111,7 +112,9 @@ class _MyOrderListPageState extends State<MyOrderListPage> {
   }
 
   Widget orderContainer(
-      {required int productNo,
+      {
+      required DocumentSnapshot<ProductOrder> document,
+      required int productNo,
       required String productName,
       required String productImageUrl,
       required double price,
@@ -188,15 +191,39 @@ class _MyOrderListPageState extends State<MyOrderListPage> {
           Row(
             children: [
               FilledButton.tonal(
-                onPressed: () {},
+                onPressed: () async {
+                  try {
+                    await document.reference.delete(); // 파이어베이스 문서 삭제
+
+                    ScaffoldMessenger.of(context).showSnackBar(
+                      const SnackBar(content: Text("주문이 취소되었습니다.")),
+                    );
+                  } catch (e) {
+                    debugPrint("주문 삭제 중 오류: $e");
+                    ScaffoldMessenger.of(context).showSnackBar(
+                      const SnackBar(content: Text("주문 취소 중 오류가 발생했습니다.")),
+                    );
+                  }
+                },
                 child: const Text("주문취소"),
               ),
               const SizedBox(width: 10),
               FilledButton(
-                onPressed: () {},
+                onPressed: () {
+                  if (paymentStatus == "입금대기") {
+                    ScaffoldMessenger.of(context).showSnackBar(
+                      const SnackBar(content: Text("입금 대기중입니다.")),
+                    );
+                  } else {
+                    // TODO: 실제 배송조회 로직 추가할 자리
+                    ScaffoldMessenger.of(context).showSnackBar(
+                      const SnackBar(content: Text("배송조회 기능은 아직 구현되지 않았습니다.")),
+                    );
+                  }
+                },
                 child: const Text("배송조회"),
               ),
-            ],
+             ],
           )
         ],
       ),

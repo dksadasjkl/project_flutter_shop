@@ -6,8 +6,6 @@
 > 
 > ## [🛠 개발 도구](#-개발-도구-1)
 >
-> ## [📆 프로젝트 일정](#-프로젝트-일정-1)
->
 > ## [🖥 화면 구현](#-화면-구현-1)
 >
 > ## [💡 느낀점](#-느낀점-1)
@@ -24,7 +22,7 @@
 -   신규 언어의 학습과 활용
 ### 📆 제작 기간
 
--   2025.05.10 ~ 2025.05.20
+-   2025.05.20 ~ 2025.05.30
 
 ### 🔎 주요 기능
 
@@ -161,45 +159,22 @@
 
 ## 🛠 개발 도구
 
-### 1. flutter
+### 1. Flutter
 
 <p>
-<img src="https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=Java&logoColor=white"/>
-<img src="https://img.shields.io/badge/SpringBoot-6DB33F?style=for-the-badge&logo=SpringBoot&logoColor=white"/>
-<img src="https://img.shields.io/badge/Amazon Aws-232F3E?style=for-the-badge&logo=Amazon Aws&logoColor=white"/>
+<img src="https://img.shields.io/badge/Flutter-02569B?style=flat&logo=flutter&logoColor=white"/>
+<img src="https://img.shields.io/badge/Dart-0175C2?style=flat&logo=dart&logoColor=white"/>
+</p>
+
+### Database
+
+<p>
 <img src="https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=Firebase&logoColor=white"/>
 </p>
 
-### 3. Database
+### Library
 
-<img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=MySQL&logoColor=white"/>
-
-### 4. SCM & Deployment
-
-<p>
-<img src="https://img.shields.io/badge/Git-181717?style=for-the-badge&logo=Git&logoColor=white"/>
-<img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=GitHub&logoColor=white"/>
-<img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=Docker&logoColor=white">
-</p>
-
-### 5. Library
-
--   ### Back-end
-
-<p>
-<img src="https://img.shields.io/badge/JWT-000000?style=for-the-badge&logo=JSON Web Tokens&logoColor=white"/><img src="https://img.shields.io/badge/MyBatis-271e1f?style=for-the-badge&logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAABuElEQVR4nO3US4hPcRQH8H9RI+Wx8FohkVfkUdQkC5FXxs6WhZSysSBCTWyRZpryWDHZi7LxSGRBKUtKMmGiRB6ZIvPRqbP4u917/zP/maXv6t77u+f7Ped8z/k1GiMANuI29mJuY7yBM/7F2bGQLcR2TMR8rMVsHMJd/MSftirBKgwrx03Mwv1839BuBdHnAfzCezzH1yR9gjv53IdH+IR3uIWudkXn4G0Sf8GQapxuV2QLvmENJqRXXTiGG0k+lAmsrCLpRTc2Y2rJ+YqKuGhVYFmrLPubSh1ODx7jepSOzoq4+E8mNg+TyxKMH1fnCNahP1pUiNuKF2n2ASzBDxwuE7moNQ5iJqZVVLQYr7G+7HA6XrYQuIxd+I2HOIUdafyUaA/WFSttFlmEjzUCx7G/5rynzuiOVI9snpYED2R77tUI7C4jjrKOYjAn6Fx+25bP13ACM3L2qxDxHc3Em3A1l6iID7iAPblo0ZYH6nGkmPl544dncQuXtWcfvo+RfBALWl1ol3L0RotXWF5JXhBamstW5kkRkcyV2J0RkReEJmFnehTGvsHnvLZjuU7GKI+a+D8aBfwFL0hrRFV1ciwAAAAASUVORK5CYII=&logoColor=white">
-<img src="https://img.shields.io/badge/Lombok-ca0124?style=for-the-badge&logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEeElEQVR4nO2aW4hVVRjHP01HzZJGJcpuU6l00Uqzgl4sCrqgDz5IZZjZQxlEaKBJWVA9pEEG3QkqESrtAqWhY+WDQZBpF2ys1DLz0s3spqU2Nr/42GvR19eZaVpzBtaZs39wmLPP3vs/a+219ndbS6SkpKSkpKSk1gEOA14H/gBukXoDmMHfvCf1BHAU8L15AHOlngAeNJ3/Augv9QIwAjhoHsAkqSeAl03nV0tPAjgDuBt4E9gItAAXm/NnAW2h8/r3HOkJAKcElxY7Z1lmrnvE/L5cegLAJGAflTkE3GCu3WnOfQyMlFoGmBw6GWkFloTfTwcGmWsHVHhAvwDjpRYBTnMj/2lH7zQwtJ1Zshc4U2oNYIXr/OBOhL77jQHUjkc+AHpLrQCMcu/52Z2870Vz33bgN3N8tdQKwP2m4Uv/x30nAdvCfa8C9xidt6RWoAhfIxPduaOBdcAmf87kAZcBhwPHGNeps6FBcgcYZzr/M9DPnZ/mjNzzQFMHel+aa0+U3AEWmAYvrnB+mOtUdI865a8HRodZol5kivMkx0nOAL2Are1Nf3PdIOCpdiLD9mjNPisELu1o+le4/oIw8n924gF8KLkDrDQNfiMYLv3b9z/uawJuDpng2mBE1VD+aPRulBrw/W2hsTqi35nGj0rQ09kR+QkYKDkDLDINft98/wrok6C32GgslJyhmMK2imOt/KwEPfUCB8L9OqtGSM4AL5kOf+YM4ZEJevOMRrPkDDDeNLbNjf78BL2BwG6jMUFyhSKD+8g0dr35/quGsgmas41GS9ZZIIXrivwO7DHHdyToaVHkW6MxWXIFODWMcuRdl8oOSNCcaTQ+yXb0gb4hYLGuzkZz1yVo9gd2GY1rJFeA+1yMriMeWa05QRct/2a1L5Kx1T9kGvuOM3xNCZrDXAnsKskRYLhzUS0uo0uK14EXjMbbKTOo2wEGhypOZI8zgs2JU3+i0dCZNUZyA+gHrDEN3e8ehhrBoQm6jW4x5CHJDaCPFjZNI3XKL3P+f2xi8URrAZHPtQ4oOQE0AK/wT+4EnjPH0xK1b3NTP68VIAq/vNx1/olw7njgMWB6ovYVwX1G7pKcoEhIVrnOP1mNsrS+Ls7lNWcV8VGEuBtc51eFabqxK++prg26SpHqNUouUCxI2IRGmQ+8Zo7PTdQ+D/jB6HytK0GSAxQW+XYX4WmF56Zw/vyQ9i5KCVGBqcFbRL5JqRN256akNW7UdXQurIK2prePOu1tWZS4KPz7bDcyMbY/tgr6lwBbnLYWTE6oTg+6bujWuca1hve9oQrl8aUVVn2ezmJlh6Liandhxg0IY7ug2Vt3e4WFDb/Ko//rWskFim1qNqafm1i31/f7IuABYAf/Rh/EM8AQyQngWdPIe0NCYj9HmDC4MdT8dUPTlcCtwMMhZY11+0odX5KNlfcAc+ge1HMs1IclOQMMcSWsVNrCXj7d3Hh5tiWsSgAnh50ZO8MKrP3EjUkHwvHWELLq9tbHQxY3ISX/LykpKSkpKZHu5C8+ETRdu+5D6AAAAABJRU5ErkJggg==&logoColor=white">
-</p>
-
--   ### Front-end
-<p>
-<img src="https://img.shields.io/badge/Axios-5A29E4?style=for-the-badge&logo=Axios&logoColor=white"/>
-<img src="https://img.shields.io/badge/React Query-FF4154?style=for-the-badge&logo=reactquery&logoColor=white"/>
-<img src="https://img.shields.io/badge/React Router-CA4245?style=for-the-badge&logo=React Router&logoColor=white"/>
-<img src="https://img.shields.io/badge/Emotion-cb0096?style=for-the-badge&logo=react&logoColor=white">
-</p>
-
-### ⛓️ pubspec.yaml(flutter)
+### ⛓️ pubspec.yaml(Flutter)
 
 | 라이브러리                          | 용도                                  |
 | ----------------------------------- | ------------------------------------- |
@@ -255,10 +230,7 @@
 <div align="center">
 </div>
 <span>
-<p>이번 한 달 동안 프로젝트를 진행하면서 많은 것을 배울 수 있었습니다. 프로젝트를 진행하면서 책임감을 느꼈고, 그 책임을 다하기 위해 최선을 다하겠다는 마음가짐을 가졌습니다. 프로젝트를 추진하는 과정에서 여러 가지 어려움이 있었지만, 하나씩 해결해 나가며 성장하는 소중한 경험을 할 수 있었습니다.</p>
-<p>가장 큰 도전은 배포 과정이었습니다. 첫 번째 프로젝트에서는 프론트엔드에서 카카오 지도를 사용하기 위해 HTTPS를 필수로 적용해야 했고, 그때는 팀원들과 강사님의 도움을 받아 무사히 배포할 수 있었습니다. 하지만 이번 프로젝트에서는 혼자서 무중단 배포를 처음 시도하게 되었고, 특히 EC2를 사용해 Docker 컨테이너에서 서버를 실행시키는 과정에서 이론적으로는 이해했지만 실제로 실습을 하면서 많은 어려움을 겪었습니다. 이 과정을 통해 배포에 대한 깊은 이해가 부족함을 느꼈고, 앞으로 배포 관련 공부를 더 해야겠다는 다짐을 하게 되었습니다.</p>
-<p>또한, 프로젝트 초기 데이터베이스 설계 과정에서 데이터 정규화의 중요성을 실감했습니다. 데이터 정규화가 제대로 이루어지지 않으면 불필요한 데이터 삽입이나, 원하는 데이터를 효율적으로 가져오는 데 어려움이 생길 수 있습니다. 이로 인해 데이터베이스를 재설계해야 할 수도 있다는 점을 깨닫고, 데이터베이스 설계에 대해 다시 한 번 깊이 고민하게 되었습니다.
-이번 프로젝트를 통해 많은 것을 배우고 경험하면서, 다음 프로젝트에서는 더욱 잘할 수 있을 것이라는 자신감이 생겼습니다. 이 경험은 제 개발 역량을 한 단계 더 끌어올려 준 값진 시간이었습니다.</p>
+<p>이번 프로젝트를 통해 Flutter라는 새로운 프레임워크를 처음으로 접하게 되었고, 그 과정에서 개발자로서 큰 성취감을 느낄 수 있었습니다. Dart 언어는 처음 사용하는 언어였지만, Java와 문법 구조가 유사한 부분이 많아 비교적 빠르게 적응할 수 있었습니다. 기존에 Java로 개발한 경험이 있어 클래스 구성이나 자료형 선언, 객체지향적인 접근 방식 등이 익숙하게 다가왔고, 덕분에 초반 학습 부담을 줄일 수 있었습니다.</p> <p>특히 Flutter의 위젯 기반 구조와 Hot Reload 기능은 개발 효율성을 크게 높여주었고, 빠르게 화면을 구성하고 피드백을 받을 수 있어 개발 자체가 재미있고 몰입감 있게 느껴졌습니다. 생소했던 기술을 하나씩 이해하고 직접 구현해 나가면서 ‘내가 진짜 앱을 만들고 있구나’라는 실감과 함께 뿌듯함을 느꼈습니다.</p> <p>Flutter를 배우며 단순히 기술적인 지식뿐만 아니라, 새로운 도구를 두려워하지 않고 도전하는 자세가 얼마나 중요한지도 깨달았습니다. 처음에는 막막했지만, 결국 앱을 완성해냈다는 경험은 앞으로 어떤 기술을 만나더라도 잘 적응하고 배워나갈 수 있다는 자신감을 심어주었습니다.</p> <p>이번 경험을 계기로, 앞으로도 다양한 기술을 배우고 익히는 것에 적극적으로 도전하고 싶다는 열정이 생겼습니다. Flutter는 제게 단순한 도구 그 이상으로, 성장의 계기를 만들어준 의미 있는 기술이었습니다.</p>
 
 
 
